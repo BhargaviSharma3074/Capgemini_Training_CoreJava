@@ -1,0 +1,13 @@
+import java.io.FileWriter;
+import java.io.File;
+import java.io.IOException;
+class WriteFile
+{
+	public static void main(String[] args) throws IOException
+	{
+		FileWriter f = new FileWriter("c:/Users/itsbh/Desktop/Capgemini/test.txt");
+		f.write("Hello World");
+		f.close();
+		System.out.println("Successfully Written in the file");
+	}
+}

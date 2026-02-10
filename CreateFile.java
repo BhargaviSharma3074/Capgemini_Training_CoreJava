@@ -1,0 +1,17 @@
+import java.io.File;
+import java.io.IOException;
+class CreateFile
+{
+	public static void main(String[] args) throws IOException
+	{
+		File f = new File("c:/Users/itsbh/Desktop/Capgemini/test.txt");
+		if(f.createNewFile())
+		{
+			System.out.println("File Created "+f.getName());
+		}
+		else
+		{
+			System.out.println("File Already Created");
+		}
+	}
+}
